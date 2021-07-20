@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ h1 {
+            position: static; /* this is the default of all elements */
+        }
+
+        .rel-container {
+            width: 800px;
+            height: 40px;
+            background-color: rgb(121, 221, 228);
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+             left: 10px;
+        }
+
+        .relative {
+            position: relative;
+            top: 100px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 1; /* puts element on top of elements with a lower z-index */
+        }
+
+    .zindex {
+        position: absolute;
+        bottom: 10px;
+        left: 48%;
+        right: 48%;
+        width: 30px;
+        height: 30px;
+    }
+
+    #d1 {
+        background-color: rgb(243, 134, 188);
+        z-index: 1;
+    }
+
+    #d2 {
+        background-color: rgb(99, 99, 192);
+        z-index: 2;
+    }
+
+    #d3 {
+        background-color: rgb(142, 230, 134);
+        z-index: 3;
+    }
+    </style>
+</head>
+<body>
+ <h1>
+      Hello World
+</h1>
+<p class="fixed">fixed to the top left</p>
+
+<div>
+    <p class="relative">relatively positioned</p>
+</div>
+<div class="rel-container">
+    <p class="absolute">Hello there absolutely positioned</p>
+</div>
+
+
+<div class="zindex" id="d1"></div>
+<div class="zindex" id="d2"></div>
+<div class="zindex" id="d3"></div>
+
+
+
+</body>
+</html>

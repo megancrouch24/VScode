@@ -1,0 +1,37 @@
+@import "style.html";
+#content-box {
+    width: 50px;
+    height: 90px;
+    padding: 9px;
+    border-radius: 20%;
+    border-color: palevioletred;
+    background-color:pink;
+    border-style: groove;
+    display:block;
+    margin: 8px 8px;
+}
+h1{
+    color: royalblue;
+}
+.border-box {
+    width: 100px;
+    height: 40px;
+    padding: 20px;
+    background-color: turquoise;
+    display:block;
+    border-radius: 50%;
+    border-style: groove;
+    border-color: violet;
+    border-width: 10px;
+    box-shadow: 10px 1px 3px 0 blueviolet;
+    text-align: center;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(219, 110, 223);
+    text-align:center;
+
+}

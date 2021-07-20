@@ -1,0 +1,21 @@
+@import "page1.html";
+H1 {
+    color:aquamarine;
+    background-color:lightcoral;
+    width: 100px;
+    height: 40px;
+    padding: 20px;
+    display:block;
+    border-radius: 50%;
+    border-style: groove;
+    border-color: violet;
+    border-width: 10px;
+    box-shadow: 10px 1px 3px 0 blueviolet;
+    text-align: center;
+
+}
+
+a{
+    color: teal;
+    background-color: wheat;
+}
