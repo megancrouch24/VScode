@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditionals</title>
+</head>
+<body>
+    <h1>truthyandfalsey</h1>
+    <script>
+        let strictA = true;
+        let strictB = 1;
+console.log(strictA == strictB); // true
+console.log(strictA === strictB); // false
+console.log(strictA != strictB); // false
+console.log(strictA !== strictB); // true
+//Declare a variable age
+let age = 10;
+      //Write a condition that checks if age is between 18 AND 65
+if (age >= 18 && age <= 65) {
+     //Return a value in each case where the condition is satisfied and not satisfied.
+  console.log("Age is in range");
+     //Consider the case where age is less than 18 - return 'underage'.
+} else if (age < 18) {
+  console.log("Underage");
+} else {
+  console.log("Catch all else");
+}
+</script>
+</body>
+</html>

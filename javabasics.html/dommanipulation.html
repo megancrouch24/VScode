@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body>
+    <h1>DOM Manipulation</h1>
+        <div id="container"></div>
+<script>
+  let containerElement = document.querySelector("#container");
+containerElement.style.width ="100px";
+containerElement.style.height = "120px";
+containerElement.style.backgroundColor = "purple";
+
+console.log(containerElement);
+
+let leadElement = document.createElement("H2");
+leadElement.textContent ="Hi this is my lead";
+let junkElement = document.createElement("H6");
+junkElement.textContent ="Hi this is my junk element";
+
+containerElement.appendChild(leadElement);
+containerElement.removeChild(junkElement);
+
+</script>
+
+
+
+
+</body>
+</html>

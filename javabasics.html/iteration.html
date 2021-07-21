@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iteration</h1>
+    <script>
+        //for loop
+for (let a = 100; a <= 200; a++) {
+  console.log(`a = ${a}`);
+}
+     //while loop
+let b = 100;
+while (b <= 200) {
+  if (b % 2 == 0) {
+    console.log("-");
+  } else {
+    console.log("*");
+  }
+  b++;
+}
+//counting to 10, 10 times each
+for (let i = 0; i < 10; i++) {
+    for (let j = 1; j <= 10; j++) {
+      console.log(j);
+    }
+}
+//switch case statement which uses the current day as its expression and matches with the relevant case
+let now = new Date(); 
+let day = now.getDay();
+switch (day) {
+  case 0:
+    console.log(`It's Sunday`);
+    break;
+  case 6:
+    console.log(`It's Saturday`);
+    break;
+  case 1:
+    console.log(`It's Monday`);
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+    console.log(`It's a weekday`);
+    break;
+  default:
+    console.log(`Excuse me?`);
+    break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
