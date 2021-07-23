@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a callback function that asks for a user to enter a value,
+        // then increase that value by 10 through another function.
+const increase = (val) => {
+          alert(`The new value is ${val+10}`);
+      }
+
+      const parent = (child) => {
+          let value = parseInt(prompt("Please enter a value"));
+          child(value);
+      }
+
+      parent(increase);
+
+    </script>
+</body>
+</html>
